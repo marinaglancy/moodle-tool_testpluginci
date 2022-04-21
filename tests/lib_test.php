@@ -29,9 +29,20 @@ class lib_test extends \advanced_testcase {
     /**
      * Test one
      *
+     * @covers ::tool_testpluginci_one
+     */
+    public function test_one() {
+        global $CFG;
+        require_once($CFG->dirroot.'/admin/tool/testpluginci/lib.php');
+        $this->assertEquals(1, tool_testpluginci_one());
+    }
+
+    /**
+     * Test one
+     *
      * @covers ::tool_testpluginci_two
      */
-    public function test_something() {
+    public function test_two() {
         global $CFG;
         require_once($CFG->dirroot.'/admin/tool/testpluginci/lib.php');
         $this->assertEquals(1, tool_testpluginci_one());
@@ -42,7 +53,7 @@ class lib_test extends \advanced_testcase {
      *
      * @covers ::tool_testpluginci_three
      */
-    public function test_something3() {
+    public function test_three() {
         global $CFG;
         require_once($CFG->dirroot.'/admin/tool/testpluginci/lib.php');
         $this->assertEquals(1, tool_testpluginci_one());
