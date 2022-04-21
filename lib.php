@@ -24,7 +24,7 @@
 
 /**
  * One
- * 
+ *
  * @return int
  */
 function tool_testpluginci_one() {
