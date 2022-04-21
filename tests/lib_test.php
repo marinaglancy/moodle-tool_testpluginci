@@ -36,4 +36,15 @@ class lib_test extends \advanced_testcase {
         require_once($CFG->dirroot.'/admin/tool/testpluginci/lib.php');
         $this->assertEquals(1, tool_testpluginci_one());
     }
+
+    /**
+     * Test one
+     *
+     * @covers ::tool_testpluginci_three
+     */
+    public function test_something3() {
+        global $CFG;
+        require_once($CFG->dirroot.'/admin/tool/testpluginci/lib.php');
+        $this->assertEquals(1, tool_testpluginci_one());
+    }
 }
