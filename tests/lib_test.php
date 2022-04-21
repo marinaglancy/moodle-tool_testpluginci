@@ -29,7 +29,7 @@ class lib_test extends \advanced_testcase {
     /**
      * Test one
      *
-     * @covers ::tool_testpluginci_one
+     * @covers ::tool_testpluginci_two
      */
     public function test_something() {
         global $CFG;
